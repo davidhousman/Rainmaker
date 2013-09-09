@@ -16,10 +16,11 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Push ME!"
+                android:text="PUSH ME!"
                 android:id="@+id/button"
                 android:layout_gravity="right"
-                android:textColor="@android:color/holo_blue_bright"/>
+                android:textColor="@android:color/holo_blue_bright"
+                android:background="@android:color/darker_gray"/>
  </LinearLayout>
 
     <LinearLayout
@@ -27,15 +28,18 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            >
 
 
-        <ImageView
+        <TextView
                 android:layout_width="match_parent"
                 android:layout_height="262dp"
                 android:id="@+id/imageView"
                 android:layout_gravity="center"
-                android:tint="@android:color/darker_gray"/>
+                android:tint="@android:color/darker_gray"
+                android:background="@drawable/makeitraintwo"
+                />
 
     </LinearLayout>
 
@@ -43,26 +47,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            >
 
         <TextView
                 android:id="@+id/Summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:background="#2fff2b"
                  />
 
         <TextView
                 android:id="@+id/apparentTemp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 />
+                android:background="#2fff2b"/>
 
         <TextView
                 android:id="@+id/HU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 />
+                android:background="#2fff2b" />
 
 
     </LinearLayout>

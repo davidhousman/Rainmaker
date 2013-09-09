@@ -26,7 +26,7 @@ public class DisplayWeatherActivity extends Activity {
 
         Log.v("First", "Initializing sounds...");
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.wassup);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.huckle1);
 
         Button play_button = (Button)this.findViewById(R.id.button);
         play_button.setOnClickListener(new View.OnClickListener() {
@@ -68,8 +68,9 @@ public class DisplayWeatherActivity extends Activity {
         AppTemp.setText(myData.getmApparentTemperatureString());
 
         //trying to set a text to a ImageView, found a different method to use.
-        //ImageView Temp = (ImageView)findViewById(R.id.imageView);
-        //Temp.setText(myData.getmtemperatureString());
+        TextView Temp = (TextView)findViewById(R.id.imageView);
+        Temp.setText(myData.getmtemperatureString());
+
 
 
 

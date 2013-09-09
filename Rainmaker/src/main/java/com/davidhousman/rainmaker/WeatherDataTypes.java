@@ -56,4 +56,6 @@ public class WeatherDataTypes {
     public void setmTemperature(Double mTemperature) {
         this.mTemperature = mTemperature;
     }
+
+
 }
