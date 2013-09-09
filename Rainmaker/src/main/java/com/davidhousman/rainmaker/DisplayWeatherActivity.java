@@ -1,10 +1,15 @@
 package com.davidhousman.rainmaker;
 
 import android.location.Location;
+import android.media.MediaPlayer;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,6 +23,22 @@ public class DisplayWeatherActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.v("First", "Initializing sounds...");
+
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.wassup);
+
+        Button play_button = (Button)this.findViewById(R.id.button);
+        play_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.v("Second", "Playing sound...");
+                mp.start();
+            }
+        });
+        Log.v("Third", "Sounds initialized.");
+
+
+
         //goGetUserLocation();
         goGetWeatherData();
 
@@ -45,6 +66,10 @@ public class DisplayWeatherActivity extends Activity {
 
         TextView AppTemp = (TextView)findViewById(R.id.apparentTemp);
         AppTemp.setText(myData.getmApparentTemperatureString());
+
+        //trying to set a text to a ImageView, found a different method to use.
+        //ImageView Temp = (ImageView)findViewById(R.id.imageView);
+        //Temp.setText(myData.getmtemperatureString());
 
 
 

@@ -13,24 +13,13 @@
             android:background="@android:color/black">
 
 
-
-        <EditText
+        <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ZIP CODE"
-                android:id="@+id/textView"
-                android:layout_gravity="left"
-                android:textColor="@android:color/holo_blue_bright"
-                android:focusableInTouchMode="true"
-                android:focusable="true"/>
-
-        <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Push ME!"
                 android:id="@+id/button"
                 android:layout_gravity="right"
-               />
+                android:textColor="@android:color/holo_blue_bright"/>
  </LinearLayout>
 
     <LinearLayout
