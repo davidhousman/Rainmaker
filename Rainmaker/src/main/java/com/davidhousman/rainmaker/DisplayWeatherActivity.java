@@ -38,13 +38,13 @@ public class DisplayWeatherActivity extends Activity {
     public void receiveWeatherData(WeatherDataTypes myData){
 
         TextView Humidity = (TextView)findViewById(R.id.HU);
-        Humidity.setText();
+        Humidity.setText(myData.getmHumidityString());
 
         TextView Summary = (TextView)findViewById(R.id.Summary);
-        Summary.setText();
+        Summary.setText(myData.getmSummary());
 
         TextView AppTemp = (TextView)findViewById(R.id.apparentTemp);
-        AppTemp.setText();
+        AppTemp.setText(myData.getmApparentTemperatureString());
 
 
 
