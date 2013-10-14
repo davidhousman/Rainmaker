@@ -1,74 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical" >
 
     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:gravity="center"
-            android:background="@android:color/black">
+            android:background="#696969">
 
 
-        <Button
+        <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PUSH ME!"
-                android:id="@+id/button"
-                android:layout_gravity="right"
-                android:textColor="@android:color/holo_blue_bright"
-                android:background="@android:color/darker_gray"/>
- </LinearLayout>
+                android:id="@+id/edittext"
+                android:layout_gravity="center"
+                android:textColor="#A4C739"
+                android:inputType="number"
+                android:hint="ZIP CODE"
+                android:maxLength="5"/>
 
-    <LinearLayout
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            >
 
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="262dp"
                 android:id="@+id/imageView"
-                android:layout_gravity="center"
-                android:tint="@android:color/darker_gray"
-                android:background="@drawable/makeitraintwo"
-                />
+                android:gravity="center"
+                android:background="@drawable/backgroundmakeitrain2"
+                android:textSize="100dp"
+                android:fontFamily="roboto condensed bold"
+                android:textColor="#1c2bff" />
 
-    </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            >
 
         <TextView
                 android:id="@+id/Summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#2fff2b"
-                 />
-
+                android:gravity="center"
+                android:hint="Summary"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="40dp"
+                android:fontFamily="roboto bold"
+                />
         <TextView
                 android:id="@+id/apparentTemp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#2fff2b"/>
+                android:gravity="center"
+                android:hint="Feels Like"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="40dp"
+                android:fontFamily="roboto bold"
+                />
 
         <TextView
                 android:id="@+id/HU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#2fff2b" />
-
+                android:gravity="center"
+                android:hint="Humidity"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="40dp"
+                android:fontFamily="roboto bold"
+                />
 
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>

@@ -18,7 +18,7 @@ public class WeatherDataTypes {
     }
 
     public String getmApparentTemperatureString(){
-        return mApparentTemperature.toString();
+        return formatTemp(mApparentTemperature.toString());
     }
 
     public void setmApparentTemperature(Double mApparentTemperature) {
@@ -30,7 +30,7 @@ public class WeatherDataTypes {
     }
 
     public String getmHumidityString(){
-        return mHumidity.toString();
+        return formatTemp(mHumidity.toString());
     }
 
     public void setmHumidity(Double mHumidity) {
@@ -50,12 +50,17 @@ public class WeatherDataTypes {
     }
 
     public String getmtemperatureString(){
-        return mTemperature.toString();
+        return formatTemp(mTemperature.toString());
     }
 
     public void setmTemperature(Double mTemperature) {
         this.mTemperature = mTemperature;
     }
 
-
+    private String formatTemp(String input) {
+       //rounds the weather temp.
+        Double inputDouble = Double.valueOf(input);
+        Long rounded = Math.round(inputDouble);
+        return String.valueOf(rounded) + "\u00b0";
+    }
 }

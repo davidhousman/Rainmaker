@@ -86,9 +86,6 @@ public class PopulateWeatherTask extends AsyncTask<ForecastAPIRequestObject,Inte
         }
 
 
-
-
-
         return myData;//return a WeatherDataTypes Object
     }
 

@@ -24,7 +24,9 @@ public class DisplayWeatherActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.v("First", "Initializing sounds...");
+        //use of media player killed until version 2.0
+
+       /* Log.v("First", "Initializing sounds...");
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.huckle1);
 
@@ -32,10 +34,10 @@ public class DisplayWeatherActivity extends Activity {
         play_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.v("Second", "Playing sound...");
-                mp.start();
+               mp.start();
             }
         });
-        Log.v("Third", "Sounds initialized.");
+        Log.v("Third", "Sounds initialized.");*/
 
 
 

@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 
 /**
- * Created by brittanyking on 8/30/13.
+ * Created by davidhousman on 8/30/13.
  */
 public class UserLocationManager implements LocationListener {
 
@@ -49,8 +49,8 @@ public class UserLocationManager implements LocationListener {
     //step 5
     @Override
     public void onLocationChanged(Location location) {
-         //ill be told the location here
 
+         //ill be told the location here
         mPopulateDataTask.receiveUserLocation(location);
         locationManager.removeUpdates(this);
         locationManager = null;
